@@ -29,7 +29,7 @@
             <div class="container-fluid justify-space-between container">
                 <a class="navbar-brand d-flex w-auto" href="../index.html"
                     style="color: #ff5722; font-weight: bold; font-size: 28px; align-items: center; gap: 8px;">
-                    <img src="/images/icons/logo.svg" alt="Logo" style="height: 32px; width: 32px;">
+                    <img src="../images/icons/logo.svg" alt="Logo" style="height: 32px; width: 32px;">
                     VisitaPe
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,19 +44,28 @@
                                 Destinos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownDestinos">
-                                <li><a class="dropdown-item" href="./destinations/costa.html">Costa</a></li>
-                                <li><a class="dropdown-item" href="./destinations/sierra.html">Sierra</a></li>
-                                <li><a class="dropdown-item" href="./destinations/selva.html">Selva</a></li>
+                                <li><a class="dropdown-item" href="./destinations/lima.html">Lima</a></li>
+                                <li><a class="dropdown-item" href="./destinations/cusco.html">Cusco</a></li>
+                                <li><a class="dropdown-item" href="./destinations/arequipa.html">Arequipa</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/tours.html">Tours</a>
+                            <a class="nav-link" href="./paquetes.html">Paquetes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/activities.html">Actividades</a>
+                            <a class="nav-link" href="./pages/activities.html">Actividades</a>
+                        </li>
+                        <li class="nav-item dropdown" id="optionContact">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownContact" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nosotros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownContact">
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" id="optionMyAccount">
-                            <a class="nav-link" href="/pages/login.html">Mi cuenta</a>
+                            <a class="nav-link" href="./login.html">Mi cuenta</a>
                         </li>
                         <li class="nav-item dropdown d-none" id="optionUsername">
                             <a class="nav-link dropdown-toggle" href="#" id="navUsername" role="button"
@@ -64,7 +73,7 @@
                                 username
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navUsername">
-                                <li><a class="dropdown-item" href="../pages/profile.html">Mi perfil</a></li>
+                                <li><a class="dropdown-item" href="./profile.html">Mi perfil</a></li>
                                 <li><a class="dropdown-item text-danger" id="btnLogout" href="#">Cerrar Sesion</a></li>
                             </ul>
                         </li>
@@ -86,12 +95,12 @@
                     </h2>
                     <form id="loginForm">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
                             <input type="email" name="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                             <input type="password" name="password" class="form-control" id="exampleInputPassword1">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -103,49 +112,29 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
+        <center>
+            <div class="footercontenedor">
+                <div class="footertitulo">
                     <h3>VisitaPe</h3>
                     <p>Tu puerta de entrada a las maravillas del Perú. Descubre experiencias únicas y crea recuerdos
                         inolvidables.</p>
+                    <div class="redes">
+                        <img src="../../images/icons/facebook-3-2.svg" alt="">
+                        <img src="../../images/icons/instagram-2016-5.svg" alt="">
+                        <img src="../../images/icons/youtube-icon-5.svg" alt="">
+                    </div>
                 </div>
 
-                <div class="footer-section">
+                <div class="footertitulo">
                     <h3>Enlaces Rápidos</h3>
                     <ul>
                         <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">Cómo Funciona</a></li>
-                        <li><a href="#">Garantía del Mejor Precio</a></li>
-                        <li><a href="#">Opiniones</a></li>
-                        <li><a href="#">Blog de Viajes</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Soporte</h3>
-                    <ul>
-                        <li><a href="#">Centro de Ayuda</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Cancelaciones</a></li>
-                        <li><a href="#">Seguridad COVID-19</a></li>
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Privacidad</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Destinos Populares</h3>
-                    <ul>
-                        <li><a href="#">Tours Machu Picchu</a></li>
-                        <li><a href="#">Valle Sagrado</a></li>
-                        <li><a href="#">Lago Titicaca</a></li>
-                        <li><a href="#">Líneas de Nazca</a></li>
-                        <li><a href="#">Amazonas</a></li>
+                        <li><a href="#">Contactanos</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
+            <p>&copy; Brayan Mendoza</p>
+        </center>
     </footer>
 </body>
 <script type="module" src="../js/login.js"></script>
