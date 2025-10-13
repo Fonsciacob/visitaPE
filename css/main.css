@@ -18,7 +18,6 @@ body {
 
 .banner p {
     background-image: url(../images/destinations/cusco.png);
-    background-image: url(../images/destinations/lima.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,6 +29,13 @@ body {
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+.bandera-lima {
+  background-image: url(../imágenes/destinos/lima.png);
+  background-size: cover;
+  background-position: center;
+  height: 250px;
 }
 
 /*Para la tarjeta*/
@@ -383,3 +389,4 @@ nav a:hover {
     }
 
 }
+
