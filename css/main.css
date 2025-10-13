@@ -31,13 +31,6 @@ body {
     align-items: center;
 }
 
-.bandera-lima {
-  background-image: url(../imágenes/destinos/lima.png);
-  background-size: cover;
-  background-position: center;
-  height: 250px;
-}
-
 /*Para la tarjeta*/
 
 .tarjeta {
@@ -389,4 +382,5 @@ nav a:hover {
     }
 
 }
+
 
