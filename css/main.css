@@ -18,6 +18,7 @@ body {
 
 .banner p {
     background-image: url(../images/destinations/cusco.png);
+    background-image: url(../images/destinations/lima.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -380,4 +381,5 @@ nav a:hover {
     .newsletter-form {
         flex-direction: column;
     }
+
 }
