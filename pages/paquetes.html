@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/paquetes.css">
 </head>
 
@@ -30,7 +30,7 @@
             <div class="container-fluid justify-space-between container">
                 <a class="navbar-brand d-flex w-auto" href="../index.html"
                     style="color: #ff5722; font-weight: bold; font-size: 28px; align-items: center; gap: 8px;">
-                    <img src="/images/icons/logo.svg" alt="Logo" style="height: 32px; width: 32px;">
+                    <img src="../images/icons/logo.svg" alt="Logo" style="height: 32px; width: 32px;">
                     VisitaPe
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -45,19 +45,28 @@
                                 Destinos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownDestinos">
-                                <li><a class="dropdown-item" href="../pages/destinations/lima.html">lima</a></li>
-                                <li><a class="dropdown-item" href="../pages/destinations/cusco.html">Cuzco</a></li>
+                                <li><a class="dropdown-item" href="../pages/destinations/lima.html">Lima</a></li>
+                                <li><a class="dropdown-item" href="../pages/destinations/cusco.html">Cusco</a></li>
                                 <li><a class="dropdown-item" href="../pages/destinations/arequipa.html">Arequipa</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/tours.html">Tours</a>
+                            <a class="nav-link" href="./paquetes.html">Paquetes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/activities.html">Actividades</a>
+                            <a class="nav-link" href="../pages/activities.html">Actividades</a>
+                        </li>
+                        <li class="nav-item dropdown" id="optionContact">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownContact" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Nosotros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownContact">
+                                <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item" id="optionMyAccount">
-                            <a class="nav-link" href="/pages/login.html">Mi cuenta</a>
+                            <a class="nav-link" href="./login.html">Mi cuenta</a>
                         </li>
                         <li class="nav-item dropdown d-none" id="optionUsername">
                             <a class="nav-link dropdown-toggle" href="#" id="navUsername" role="button"
@@ -65,7 +74,7 @@
                                 username
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navUsername">
-                                <li><a class="dropdown-item" href="../pages/profile.html">Mi perfil</a></li>
+                                <li><a class="dropdown-item" href="./profile.html">Mi perfil</a></li>
                                 <li><a class="dropdown-item text-danger" id="btnLogout" href="#">Cerrar Sesion</a></li>
                             </ul>
                         </li>
@@ -77,61 +86,72 @@
     <main>
         <section class="paquete">
             <div class="bannerpaquete">
-            <img src="../images/paquetes/joven-excursionista-en-un-recorrido-de-trekking-traves-de-las-hermosas-montanas-de-los-andes-en-peru.jpg" alt="">
+                <img src="../images/paquetes/joven-excursionista-en-un-recorrido-de-trekking-traves-de-las-hermosas-montanas-de-los-andes-en-peru.jpg"
+                    alt="">
             </div>
             <div class="visitapepaquetes">
                 <h1>Visita Perú</h1>
                 <h2>Paquetes turísticos al mejor precio</h2>
-                <p>Explora el legado cultural de Perú, una tierra de civilizaciones ancestrales, asombrosos vestigios arqueológicos y costumbres que aún laten en cada pueblo y paisaje.</p>
+                <p>Explora el legado cultural de Perú, una tierra de civilizaciones ancestrales, asombrosos vestigios
+                    arqueológicos y costumbres que aún laten en cada pueblo y paisaje.</p>
             </div>
         </section>
         <section class="paquetecontenido">
             <div class="tarjetapaquete">
                 <div class="videos">
-                <video controls muted autoplay src="../videos/huazcaran.mp4"></video>
+                    <video controls muted autoplay src="../videos/huazcaran.mp4"></video>
                 </div>
                 <div class="paquetedetalle">
-                <h3>Huazcaran</h3>
-                <p>Majestuoso y desafiante, el Huascarán es la montaña más alta del Perú y un símbolo de la grandeza natural de los Andes. Rodeado por paisajes glaciares, lagunas turquesas y biodiversidad única, este coloso invita a los aventureros a explorar su belleza imponente y a conectar con la energía pura de la cordillera.</p>
-                <p><strong>Precio:</strong> $900</span></p>
-                <p><strong>Días:</strong> 4</p>
-                <p><strong>Dificultad:</strong> Moderada</p>
-                <p><strong>Actividades:</strong> 4</p>
-                <div class="botoncentrado">
-                <button>Ver Detalles</button>
-                </div>
+                    <h3>Huazcaran</h3>
+                    <p>Majestuoso y desafiante, el Huascarán es la montaña más alta del Perú y un símbolo de la grandeza
+                        natural de los Andes. Rodeado por paisajes glaciares, lagunas turquesas y biodiversidad única,
+                        este coloso invita a los aventureros a explorar su belleza imponente y a conectar con la energía
+                        pura de la cordillera.</p>
+                    <p><strong>Precio:</strong> $900</span></p>
+                    <p><strong>Días:</strong> 4</p>
+                    <p><strong>Dificultad:</strong> Moderada</p>
+                    <p><strong>Actividades:</strong> 4</p>
+                    <div class="botoncentrado">
+                        <button>Ver Detalles</button>
+                    </div>
                 </div>
             </div>
             <div class="tarjetapaquete">
-                  <div class="videos">
-                <video controls muted autoplay src="../videos/Loreto.mp4"></video>
+                <div class="videos">
+                    <video controls muted autoplay src="../videos/Loreto.mp4"></video>
                 </div>
                 <div class="paquetedetalle">
-                <h3>Loreto</h3>
-                <p>Sumérgete en la inmensidad de la selva amazónica, donde los ríos serpentean entre árboles milenarios y la vida florece en cada rincón. Loreto es una puerta a lo desconocido: biodiversidad asombrosa, culturas ancestrales y paisajes que despiertan el espíritu aventurero. Aquí, la naturaleza no se observa… se siente.</p>
-                <p><strong>Precio:</strong> $1300</p>
-                <p><strong>Días:</strong> 6</p>
-                <p><strong>Dificultad:</strong> Alta</p>
-                <p><strong>Actividades:</strong> 5</p>
-                 <div class="botoncentrado">
-                <button>Ver Detalles</button>
-                </div>
+                    <h3>Loreto</h3>
+                    <p>Sumérgete en la inmensidad de la selva amazónica, donde los ríos serpentean entre árboles
+                        milenarios y la vida florece en cada rincón. Loreto es una puerta a lo desconocido:
+                        biodiversidad asombrosa, culturas ancestrales y paisajes que despiertan el espíritu aventurero.
+                        Aquí, la naturaleza no se observa… se siente.</p>
+                    <p><strong>Precio:</strong> $1300</p>
+                    <p><strong>Días:</strong> 6</p>
+                    <p><strong>Dificultad:</strong> Alta</p>
+                    <p><strong>Actividades:</strong> 5</p>
+                    <div class="botoncentrado">
+                        <button>Ver Detalles</button>
+                    </div>
                 </div>
             </div>
             <div class="tarjetapaquete">
-                  <div class="videos">
-                <video controls muted autoplay src="../videos/Apurimac.mp4"></video>
+                <div class="videos">
+                    <video controls muted autoplay src="../videos/Apurimac.mp4"></video>
                 </div>
                 <div class="paquetedetalle">
-                <h3>Apurímac </h3>
-                <p>Entre profundos cañones y montañas sagradas, Apurímac guarda paisajes imponentes y una herencia cultural vibrante. Es tierra de tradiciones vivas, comunidades quechuas y aventuras inolvidables, como cruzar el legendario puente Q’eswachaka o explorar el Cañón del Apurímac. Un destino que conecta naturaleza, historia y espíritu andino.</p>
-                <p><strong>Precio:</strong> $1000</p>
-                <p><strong>Días:</strong> 3</p>
-                <p><strong>Dificultad:</strong> Moderada</p>
-                <p><strong>Actividades:</strong> 5</p>
-                <div class="botoncentrado">
-                <button>Ver Detalles</button>
-                </div>
+                    <h3>Apurímac </h3>
+                    <p>Entre profundos cañones y montañas sagradas, Apurímac guarda paisajes imponentes y una herencia
+                        cultural vibrante. Es tierra de tradiciones vivas, comunidades quechuas y aventuras
+                        inolvidables, como cruzar el legendario puente Q’eswachaka o explorar el Cañón del Apurímac. Un
+                        destino que conecta naturaleza, historia y espíritu andino.</p>
+                    <p><strong>Precio:</strong> $1000</p>
+                    <p><strong>Días:</strong> 3</p>
+                    <p><strong>Dificultad:</strong> Moderada</p>
+                    <p><strong>Actividades:</strong> 5</p>
+                    <div class="botoncentrado">
+                        <button>Ver Detalles</button>
+                    </div>
                 </div>
             </div>
         </section>
