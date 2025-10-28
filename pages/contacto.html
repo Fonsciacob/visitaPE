@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cusco</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+   <header>
+         <!-- Banner -->
+        <div class="header-top">
+            <div class="container">
+                <div>
+                    <span>📞 +51 999 888 777</span>
+                    <span style="margin-left: 20px;">🌍 Español</span>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid justify-space-between container">
+                <a class="navbar-brand d-flex w-auto" href="../index.html"
+                    style="color: #ff5722; font-weight: bold; font-size: 28px; align-items: center; gap: 8px;">
+                    <img src="/images/icons/logo.svg" alt="Logo" style="height: 32px; width: 32px;">
+                    VisitaPe
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" id="optionDetinations">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownDestinos" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownDestinos">
+                                <li><a class="dropdown-item" href="./destinations/costa.html">Costa</a></li>
+                                <li><a class="dropdown-item" href="./destinations/sierra.html">Sierra</a></li>
+                                <li><a class="dropdown-item" href="./destinations/selva.html">Selva</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/paquetes.html">Paquetes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/activities.html">Actividades</a>
+                        </li>
+                        <li class="nav-item" id="optionMyAccount">
+                            <a class="nav-link" href="/pages/login.html">Mi cuenta</a>
+                        </li>
+                        <li class="nav-item dropdown d-none" id="optionUsername">
+                            <a class="nav-link dropdown-toggle" href="#" id="navUsername" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                username
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navUsername">
+                                <li><a class="dropdown-item" href="../pages/profile.html">Mi perfil</a></li>
+                                <li><a class="dropdown-item text-danger" id="btnLogout" href="#">Cerrar Sesion</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bannerc">
+            <p><strong>Contactanos</strong></p>
+        </div>
+    </header>
+    <main  class="container d-flex my-5 gap-5 shadow rounded">
+        <div class="col">
+            <div class="row md-6 p-2">
+                <h1>Ponte en contacto</h1>
+                <div class="contenedor-formulario">
+                    <form id="formulario-contacto" action="#" method="post" onsubmit="validarFormulario(event)">
+                    <!--Datos personales-->
+                    <div class="row mb-3">
+                        <label class="form-label" for="nombre">Nombres y Apellidos <span class="text-danger">*</span></label>
+                        <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Ej. Nilson De la Cruz" required>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="form-label" for="email">Email <span class="text-danger">*</span></label>
+                        <input class="form-control" id="email" name="email" type="text" placeholder="Ej. nilsondelacruz@gmail.com" required>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="form-label" for="asunot">Asunto <span class="text-danger">*</span></label>
+                        <select name="form-select" name="asunto" id="asunto">Asunto de correo
+                            <option value="" disabled selected>--Seleccione una opcion--</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="soporte">Soporte</option>
+                            <option value="consulta">Consulta</option>
+                        </select>
+                    </div>
+                    <!--Area de texto-->
+                    <div class="row mb-3">
+                        <label class="form-label" for="mensaje">Tu mensaje <span class="text-danger">*</span></label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Escriba aqui..." required style="height: 200px;" ></textarea>
+                    </div>
+                    <!--Botones-->
+                    <div class="d-flex justify-content-center gap-3">
+                        <button type="submit" class="btn btn-lg width-50 btn-outline-primary">Enviar</button>
+                        <button type="reset" class="btn btn-lg  width-50 btn-outline-danger">Limpiar</button>
+                    </div>
+                    <!--seccion oculta y solamente se muestra con alguna condicion-->
+                    <div id="alerta-validacion" class="alert alert-danger mt-3 d-none" role="alert">
+                    </div>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <div class="col bg-primary text-white p-2">
+            <div class="row md-6" >
+                <h1>Información</h1>
+                <div class="d-flex align-items-center w-auto m-4" >
+                    <img src="../images/icons/placeholderblackshapeforlocalizationonmaps_79861.png" style="width: 10%">
+                    <p>Av. Uruguay 514, Oficina 4 <br>Lima, Perú.</p>
+                </div>
+                <div class="d-flex align-items-center w-auto m-4">
+                    <img src="../images/icons/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.png" style="width: 10%">
+                    <p>(+51) 923104322 <br>(+51) 901908944</p>
+                </div>
+                <div class="d-flex align-items-center w-auto m-4">
+                    <img src="../images/icons/mail_email_message_electronic_online_web_icon-icons.com_59986.png" style=" width: 10%">
+                    <p>reservasvisitape.@visitaperu.com</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+     <footer>
+        <center>
+            <div class="footercontenedor">
+                <div class="footertitulo">
+                    <h3>VisitaPe</h3>
+                    <p>Tu puerta de entrada a las maravillas del Perú. Descubre experiencias únicas y crea recuerdos
+                        inolvidables.</p>
+                    <div class="redes">
+                        <img src="../../images/icons/facebook-3-2.svg" alt="">
+                        <img src="../../images/icons/instagram-2016-5.svg" alt="">
+                        <img src="../../images/icons/youtube-icon-5.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="footertitulo">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>&copy; Nilson De la Cruz</p>
+        </center>
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        //funcion para validar el formulario
+        function validarFormulario(event) {
+            event.preventDefault();
+
+            const form = document.getElementById('formulario-contacto');
+            
+            const nombre = document.getElementById("nombre").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+            const alerta= document.getElementById("alerta-validacion");
+    
+
+            alerta.classList.add("d-none");
+
+            if (nombre =="" || email =="" || mensaje==""){
+                alerta.textContent="Por favor ingrese todos los campos correctamente, ha cometido algun error";
+                alerta.classList.remove("d-none");
+                return;
+            }
+
+            alert("Su mensaje ha sido enviado con exito");
+
+            form.reset();
+        }
+    </script>
+</body>
+</html>
